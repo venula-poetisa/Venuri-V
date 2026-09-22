@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venuri V. | Admin Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="loginView" class="login-view">
+    <div class="login-card">
+        <div class="admin-mark">VV</div>
+        <p class="eyebrow">Portfolio CMS</p>
+        <h1>Welcome back.</h1>
+        <p>Sign in to manage the content displayed on your portfolio.</p>
+        <form id="loginForm">
+            <label>Email<input id="loginEmail" type="email" required placeholder="admin@example.com"></label>
+            <label>Password<input id="loginPassword" type="password" required placeholder="••••••••"></label>
+            <button class="primary-btn" type="submit">Sign in</button>
+            <p id="loginError" class="error"></p>
+        </form>
+    </div>
+</div>
+
+<div id="dashboardView" class="dashboard hidden">
+    <aside class="sidebar">
+        <div class="sidebar-brand"><strong>Venuri V.</strong><span>Portfolio CMS</span></div>
+        <nav>
+            <button data-section="overview" class="nav-item active">⌂ <span>Overview</span></button>
+            <button data-section="profile" class="nav-item">◎ <span>Profile</span></button>
+            <button data-section="education" class="nav-item">▣ <span>Education</span></button>
+            <button data-section="experience" class="nav-item">◈ <span>Experience</span></button>
+            <button data-section="skills" class="nav-item">◆ <span>Skills & Stack</span></button>
+            <button data-section="projects" class="nav-item">◫ <span>Projects</span></button>
+            <button data-section="future" class="nav-item">✦ <span>Future Projects</span></button>
+            <button data-section="contact" class="nav-item">✉ <span>Contact</span></button>
+        </nav>
+        <button id="logoutBtn" class="logout">↪ Sign out</button>
+    </aside>
+
+    <main class="admin-main">
+        <header class="admin-topbar"><div><p class="eyebrow">Dashboard</p><h1 id="pageTitle">Overview</h1></div><a href="index.html" target="_blank" class="view-site">View portfolio ↗</a></header>
+        <div id="toast" class="toast"></div>
+
+        <section id="overview" class="admin-section active-section">
+            <div class="stats-grid">
+                <div class="stat-card"><span>Projects</span><strong id="projectCount">0</strong></div>
+                <div class="stat-card"><span>Education</span><strong id="educationCount">0</strong></div>
+                <div class="stat-card"><span>Experience</span><strong id="experienceCount">0</strong></div>
+                <div class="stat-card"><span>Skills</span><strong id="skillCount">0</strong></div>
+            </div>
+            <div class="panel">
+                <p class="eyebrow">Content management</p>
+                <h2>Your portfolio, without editing HTML at 2 a.m.</h2>
+                <p>Use the sections in the sidebar to update portfolio data. Changes are saved through the REST API and stored in MongoDB.</p>
+            </div>
+        </section>
+
+        <section id="profile" class="admin-section"><div class="panel"><h2>Profile</h2><form id="profileForm" class="form-grid"></form></div></section>
+        <section id="education" class="admin-section"><div class="panel"><div class="panel-head"><h2>Education</h2><button class="small-btn" onclick="addItem('education')">+ Add</button></div><div id="educationList" class="editable-list"></div></div></section>
+        <section id="experience" class="admin-section"><div class="panel"><div class="panel-head"><h2>Experience</h2><button class="small-btn" onclick="addItem('experience')">+ Add</button></div><div id="experienceList" class="editable-list"></div></div></section>
+        <section id="skills" class="admin-section"><div class="panel"><h2>Skills & Tech Stack</h2><form id="skillsForm" class="form-grid"></form></div></section>
+        <section id="projects" class="admin-section"><div class="panel"><div class="panel-head"><h2>Projects</h2><button class="small-btn" onclick="addItem('projects')">+ Add project</button></div><div id="projectsList" class="editable-list"></div></div></section>
+        <section id="future" class="admin-section"><div class="panel"><div class="panel-head"><h2>Future Projects</h2><button class="small-btn" onclick="addItem('futureProjects')">+ Add</button></div><div id="futureList" class="editable-list"></div></div></section>
+        <section id="contact" class="admin-section"><div class="panel"><h2>Contact Information & Resume</h2><form id="contactForm" class="form-grid"></form></div></section>
+    </main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
