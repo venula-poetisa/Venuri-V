@@ -1,14 +1,15 @@
-# Local media storage inside your GitHub repo
 media:
-  input: public/content/images
-  output: /content/images
+  input: images
+  output: /images
 
 content:
   - name: projects
     label: Portfolio Projects
     type: file
-    path: public/data/projects.json
+    path: content/projects.json
+    format: json
     list: true
+
     fields:
       - name: title
         label: Project Title
@@ -20,7 +21,7 @@ content:
         type: text
 
       - name: image
-        label: Cover Image
+        label: Project Image
         type: image
 
       - name: github
@@ -28,7 +29,6 @@ content:
         type: string
 
       - name: tags
-        label: Tech Stack / Tags
-        type: list
-        field:
-          type: string
+        label: Tech Stack
+        type: string
+        list: true

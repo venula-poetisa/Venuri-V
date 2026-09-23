@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Sales Management System",
+    "description": "A desktop sales management application for managing products, customers, sales, stock, and invoices.",
+    "image": "/images/project1.png",
+    "github": "https://github.com/venula-poetisa",
+    "tags": [
+      "Java",
+      "Java Swing",
+      "JDBC",
+      "MySQL"
+    ]
+  },
+  {
+    "title": "Dog Hostel Website",
+    "description": "A responsive website designed for a dog hostel, built with HTML, CSS, and JavaScript.",
+    "image": "/images/project2.png",
+    "github": "https://github.com/venula-poetisa",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }
+]
