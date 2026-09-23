@@ -1,0 +1,186 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+
+  - name: "business"
+    label: "Business Information"
+    files:
+      - name: "business"
+        label: "Business Information"
+        file: "content/business.json"
+        fields:
+          - label: "Business Name"
+            name: "name"
+            widget: "string"
+
+          - label: "About"
+            name: "about"
+            widget: "text"
+
+          - label: "Phone"
+            name: "phone"
+            widget: "string"
+
+          - label: "WhatsApp"
+            name: "whatsapp"
+            widget: "string"
+
+          - label: "Address"
+            name: "address"
+            widget: "string"
+
+          - label: "Opening Hours"
+            name: "hours"
+            widget: "string"
+
+
+  - name: "salon"
+    label: "Salon Services"
+    files:
+      - name: "salon"
+        label: "Salon Services"
+        file: "content/salon.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - label: "Service Name"
+                name: "name"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Price (Rs.)"
+                name: "price"
+                widget: "string"
+                required: false
+
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                required: false
+
+
+  - name: "dressmaking"
+    label: "Dressmaking"
+    files:
+      - name: "dressmaking"
+        label: "Dressmaking"
+        file: "content/dressmaking.json"
+        fields:
+          - label: "Designs"
+            name: "designs"
+            widget: "list"
+            fields:
+              - label: "Design Name"
+                name: "name"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Price (Rs.)"
+                name: "price"
+                widget: "string"
+                required: false
+
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                required: false
+
+
+  - name: "dress_hiring"
+    label: "Dress Hiring"
+    files:
+      - name: "dress_hiring"
+        label: "Dress Hiring"
+        file: "content/dress-hiring.json"
+        fields:
+          - label: "Dresses"
+            name: "dresses"
+            widget: "list"
+            fields:
+              - label: "Dress Name"
+                name: "name"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Hire Price (Rs. per day/event)"
+                name: "price"
+                widget: "string"
+                required: false
+
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                required: false
+
+
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "gallery"
+        label: "Gallery"
+        file: "content/gallery.json"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+
+              - label: "Caption"
+                name: "caption"
+                widget: "string"
+                required: false
+
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - "Salon"
+                  - "Dressmaking"
+                  - "Dress Hiring"
+                  - "Bridal"
+
+
+  - name: "reviews"
+    label: "Reviews"
+    files:
+      - name: "reviews"
+        label: "Reviews"
+        file: "content/reviews.json"
+        fields:
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - label: "Customer Name"
+                name: "name"
+                widget: "string"
+
+              - label: "Review"
+                name: "review"
+                widget: "text"
+
+              - label: "Rating"
+                name: "rating"
+                widget: "number"
+                value_type: "int"
+                min: 1
+                max: 5
