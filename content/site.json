@@ -1,0 +1,226 @@
+{
+  "general": {
+    "siteTitle": "Venuri V. | Portfolio",
+    "metaDescription": "Venuri V. - BIT & BSc undergraduate portfolio",
+    "favicon": "/content/favicon.png"
+  },
+
+  "header": {
+    "brand": "Venuri V.",
+    "email": "venurivethmini2005@gmail.com",
+    "github": "https://github.com/venula-poetisa",
+    "linkedin": "https://www.linkedin.com/in/venuri-vethmini-04157228a",
+    "resume": "/content/cv.pdf"
+  },
+
+  "hero": {
+    "eyebrow": "BIT & BSc undergraduate",
+    "heading": "Hi, I'm",
+    "headingEmphasis": "Venuri.",
+    "description": "A BIT and BSc undergraduate passionate about technology, software development, and building practical digital solutions. Currently learning Java, JavaScript, MERN Stack, MySQL, and modern web technologies.",
+    "primaryButton": {
+      "label": "View my work",
+      "link": "#projects"
+    },
+    "secondaryButton": {
+      "label": "View Resume"
+    },
+    "stats": [
+      {
+        "number": "02",
+        "label": "Degrees"
+      },
+      {
+        "number": "02+",
+        "label": "Experiences"
+      },
+      {
+        "number": "05+",
+        "label": "Tech areas"
+      }
+    ],
+    "codeCard": {
+      "filename": "venuri.js",
+      "name": "Venuri V.",
+      "focus": "software",
+      "stack": [
+        "Java",
+        "MERN"
+      ],
+      "mindset": "always learning"
+    },
+    "badges": [
+      {
+        "icon": "fa-code",
+        "label": "Software"
+      },
+      {
+        "icon": "fa-database",
+        "label": "Databases"
+      }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "01 / About",
+    "heading": "A little bit about me.",
+    "lead": "I am an undergraduate currently pursuing a Bachelor of Information Technology (BIT) and a Bachelor of Science in Physical Science-ICT.",
+    "paragraphs": [
+      "My studies have given me a foundation in programming, database management, information systems, and software development. I enjoy turning what I learn into practical projects and improving them as my skills grow.",
+      "Outside university, I enjoy reading fiction, exploring new technologies, spending time with my cat, music, language learning, and finding new ways to challenge myself."
+    ],
+    "techPills": [
+      "Java",
+      "Java Swing",
+      "JavaScript",
+      "MERN",
+      "HTML/CSS",
+      "MySQL"
+    ],
+    "photo": "/content/me.jpg",
+    "photoCaption": "Currently learning & building"
+  },
+
+  "education": [
+    {
+      "year": "Current",
+      "label": "Bachelor's Degree",
+      "degree": "Bachelor of Information Technology",
+      "institution": "University of Colombo School of Computing (UCSC)",
+      "description": "",
+      "link": "https://bit.lk"
+    },
+    {
+      "year": "Current",
+      "label": "Bachelor's Degree",
+      "degree": "BSc. Physical Science - Information and Communication Technology",
+      "institution": "University of Sri Jayewardenepura",
+      "description": "",
+      "link": "https://science.sjp.ac.lk/information-and-communication-technology-ict/"
+    },
+    {
+      "year": "A/L",
+      "label": "G.C.E. Advanced Level",
+      "degree": "ICT, Combined Mathematics & Physics",
+      "institution": "",
+      "description": "ICT (B), Combined Mathematics (C), Physics (C)",
+      "link": ""
+    }
+  ],
+
+  "experience": [
+    {
+      "date": "Feb 2026 · Remote",
+      "icon": "fa-brain",
+      "role": "Data Annotator - Freelancing",
+      "company": "Innodata Inc.",
+      "description": "Labeling and evaluating visual and multimedia content for AI training datasets, ensuring accuracy, consistency, and overall quality.",
+      "tags": [
+        "AI Data",
+        "Quality",
+        "Annotation"
+      ]
+    },
+    {
+      "date": "Oct 2024 - Apr 2025",
+      "icon": "fa-building-columns",
+      "role": "Intern - Centralized Credit Documentation Unit",
+      "company": "Sampath Bank PLC",
+      "description": "Prepared and processed documents involving sensitive client and company data, coordinated branch submissions, and worked with officers under high-volume deadlines.",
+      "tags": [
+        "Documentation",
+        "Accuracy",
+        "Teamwork"
+      ]
+    }
+  ],
+
+  "skills": {
+    "eyebrow": "04 / Skills",
+    "heading": "My current toolkit.",
+    "subtitle": "A growing stack, not a shrine to technologies I installed once and forgot about.",
+    "categories": [
+      {
+        "icon": "fa-laptop-code",
+        "title": "Development",
+        "items": [
+          "Java",
+          "Java OOP",
+          "JDBC",
+          "Java Swing",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "PHP"
+        ]
+      },
+      {
+        "icon": "fa-database",
+        "title": "Data & Tools",
+        "items": [
+          "MySQL",
+          "MongoDB",
+          "Git",
+          "GitHub",
+          "REST APIs"
+        ]
+      },
+      {
+        "icon": "fa-people-group",
+        "title": "Professional",
+        "items": [
+          "Analytical Problem Solving",
+          "Attention to Detail",
+          "Teamwork",
+          "Data Annotation"
+        ]
+      }
+    ]
+  },
+
+  "projectsSection": {
+    "eyebrow": "05 / Projects",
+    "heading": "Things I've built.",
+    "subtitle": "Selected academic and personal work, presented around what each project actually does."
+  },
+
+  "future": {
+    "eyebrow": "06 / Future Projects",
+    "heading": "What's next?",
+    "subtitle": "A simple roadmap for projects I'm planning to turn into real builds.",
+    "projects": [
+      {
+        "status": "Exploring",
+        "icon": "fa-globe",
+        "title": "MERN Portfolio Platform",
+        "description": "A full-stack portfolio platform with a CMS-style admin panel, authentication and database-backed content."
+      },
+      {
+        "status": "Planned",
+        "icon": "fa-mobile-screen-button",
+        "title": "Practical Student App",
+        "description": "A small full-stack application designed around a real student workflow, from requirements to deployment."
+      },
+      {
+        "status": "Learning",
+        "icon": "fa-cloud",
+        "title": "Cloud & Deployment",
+        "description": "Learning deployment, CI/CD, containers and cloud fundamentals through a project that can live beyond localhost."
+      }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "07 / Contact",
+    "heading": "Let's build something useful.",
+    "description": "Have a project, internship opportunity, or just a technology-related reason to open another browser tab?",
+    "emailButton": "Email me",
+    "githubLabel": "GitHub",
+    "linkedinLabel": "LinkedIn"
+  },
+
+  "footer": {
+    "text": "© 2026 Venuri V. Built with curiosity, caffeine, and a suspicious number of browser tabs.",
+    "backToTop": "Back to top ↑"
+  }
+}

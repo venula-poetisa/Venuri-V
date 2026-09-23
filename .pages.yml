@@ -1,8 +1,471 @@
 media:
-  input: images
-  output: /images
+  - name: images
+    label: Project Images
+    input: images
+    output: /images
+
+  - name: siteAssets
+    label: Site Assets
+    input: content
+    output: /content
 
 content:
+
+  # ==================== SITE SETTINGS ====================
+
+  - name: site
+    label: Site Settings
+    type: file
+    path: content/site.json
+    format: json
+
+    fields:
+
+      # ---------- GENERAL ----------
+
+      - name: general
+        label: General
+        type: object
+
+        fields:
+
+          - name: siteTitle
+            label: Website Title
+            type: string
+
+          - name: metaDescription
+            label: Meta Description
+            type: text
+
+          - name: favicon
+            label: Favicon
+            type: image
+            options:
+              media: siteAssets
+
+
+      # ---------- HEADER ----------
+
+      - name: header
+        label: Header
+        type: object
+
+        fields:
+
+          - name: brand
+            label: Brand Name
+            type: string
+
+          - name: email
+            label: Email
+            type: string
+
+          - name: github
+            label: GitHub URL
+            type: string
+
+          - name: linkedin
+            label: LinkedIn URL
+            type: string
+
+          - name: resume
+            label: Resume / CV
+            type: file
+            options:
+              media: siteAssets
+              categories:
+                - document
+
+
+      # ---------- HERO ----------
+
+      - name: hero
+        label: Hero Section
+        type: object
+
+        fields:
+
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+
+          - name: heading
+            label: Heading
+            type: string
+
+          - name: headingEmphasis
+            label: Heading Emphasis
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: primaryButton
+            label: Primary Button
+            type: object
+
+            fields:
+              - name: label
+                label: Button Text
+                type: string
+
+              - name: link
+                label: Button Link
+                type: string
+
+          - name: secondaryButton
+            label: Resume Button
+            type: object
+
+            fields:
+              - name: label
+                label: Button Text
+                type: string
+
+          - name: stats
+            label: Quick Stats
+            type: object
+            list:
+              collapsible:
+                collapsed: false
+                summary: "{label}"
+
+            fields:
+              - name: number
+                label: Number
+                type: string
+
+              - name: label
+                label: Label
+                type: string
+
+          - name: codeCard
+            label: Code Card
+            type: object
+
+            fields:
+
+              - name: filename
+                label: Filename
+                type: string
+
+              - name: name
+                label: Name
+                type: string
+
+              - name: focus
+                label: Focus
+                type: string
+
+              - name: stack
+                label: Stack
+                type: string
+                list: true
+
+              - name: mindset
+                label: Mindset
+                type: string
+
+          - name: badges
+            label: Floating Badges
+            type: object
+            list:
+              collapsible:
+                collapsed: false
+                summary: "{label}"
+
+            fields:
+
+              - name: icon
+                label: Font Awesome Icon
+                type: string
+
+              - name: label
+                label: Label
+                type: string
+
+
+      # ---------- ABOUT ----------
+
+      - name: about
+        label: About Section
+        type: object
+
+        fields:
+
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+
+          - name: heading
+            label: Heading
+            type: string
+
+          - name: lead
+            label: Lead Paragraph
+            type: text
+
+          - name: paragraphs
+            label: Paragraphs
+            type: text
+            list: true
+
+          - name: techPills
+            label: Technologies
+            type: string
+            list: true
+
+          - name: photo
+            label: Profile Photo
+            type: image
+            options:
+              media: siteAssets
+
+          - name: photoCaption
+            label: Photo Caption
+            type: string
+
+
+      # ---------- EDUCATION ----------
+
+      - name: education
+        label: Education
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{degree} — {institution}"
+
+        fields:
+
+          - name: year
+            label: Year / Status
+            type: string
+
+          - name: label
+            label: Qualification Type
+            type: string
+
+          - name: degree
+            label: Degree / Qualification
+            type: string
+
+          - name: institution
+            label: Institution
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: link
+            label: Programme Link
+            type: string
+
+
+      # ---------- EXPERIENCE ----------
+
+      - name: experience
+        label: Experience
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{role} — {company}"
+
+        fields:
+
+          - name: date
+            label: Date
+            type: string
+
+          - name: icon
+            label: Font Awesome Icon
+            type: string
+
+          - name: role
+            label: Job Title
+            type: string
+
+          - name: company
+            label: Company
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: tags
+            label: Skills / Tags
+            type: string
+            list: true
+
+
+      # ---------- SKILLS ----------
+
+      - name: skills
+        label: Skills
+        type: object
+
+        fields:
+
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+
+          - name: heading
+            label: Heading
+            type: string
+
+          - name: subtitle
+            label: Subtitle
+            type: text
+
+          - name: categories
+            label: Skill Categories
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+
+            fields:
+
+              - name: icon
+                label: Font Awesome Icon
+                type: string
+
+              - name: title
+                label: Category Name
+                type: string
+
+              - name: items
+                label: Skills
+                type: string
+                list: true
+
+
+      # ---------- PROJECT SECTION TEXT ----------
+
+      - name: projectsSection
+        label: Projects Section
+        type: object
+
+        fields:
+
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+
+          - name: heading
+            label: Heading
+            type: string
+
+          - name: subtitle
+            label: Subtitle
+            type: text
+
+
+      # ---------- FUTURE PROJECTS ----------
+
+      - name: future
+        label: Future Projects
+        type: object
+
+        fields:
+
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+
+          - name: heading
+            label: Heading
+            type: string
+
+          - name: subtitle
+            label: Subtitle
+            type: text
+
+          - name: projects
+            label: Future Projects
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{title}"
+
+            fields:
+
+              - name: status
+                label: Status
+                type: string
+
+              - name: icon
+                label: Font Awesome Icon
+                type: string
+
+              - name: title
+                label: Project Title
+                type: string
+
+              - name: description
+                label: Description
+                type: text
+
+
+      # ---------- CONTACT ----------
+
+      - name: contact
+        label: Contact
+        type: object
+
+        fields:
+
+          - name: eyebrow
+            label: Eyebrow
+            type: string
+
+          - name: heading
+            label: Heading
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: emailButton
+            label: Email Button Text
+            type: string
+
+          - name: githubLabel
+            label: GitHub Label
+            type: string
+
+          - name: linkedinLabel
+            label: LinkedIn Label
+            type: string
+
+
+      # ---------- FOOTER ----------
+
+      - name: footer
+        label: Footer
+        type: object
+
+        fields:
+
+          - name: text
+            label: Footer Text
+            type: string
+
+          - name: backToTop
+            label: Back To Top Text
+            type: string
+
+
+  # ==================== PROJECTS ====================
+
   - name: projects
     label: Portfolio Projects
     type: file
@@ -11,6 +474,7 @@ content:
     list: true
 
     fields:
+
       - name: title
         label: Project Title
         type: string
@@ -23,6 +487,8 @@ content:
       - name: image
         label: Project Image
         type: image
+        options:
+          media: images
 
       - name: github
         label: GitHub URL
