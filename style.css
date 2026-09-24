@@ -90,6 +90,40 @@ footer{border-top:1px solid var(--border);padding:25px 7%;display:flex;justify-c
 
 .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
 
-@media(max-width:950px){.desktop-nav{display:none}.mobile-menu-button{display:grid}.hero{grid-template-columns:1fr;min-height:auto;padding-top:90px}.hero-visual{max-width:650px;margin:0 auto;width:100%}.about-grid{grid-template-columns:1fr}.portrait-wrap{max-width:380px;margin:auto}.skills-layout,.roadmap{grid-template-columns:1fr}.featured-project{grid-template-columns:1fr}.project-image{min-height:350px}.contact-card{flex-direction:column;align-items:flex-start}.experience-grid{grid-template-columns:1fr}.projects-heading{display:block}}
+@media(max-width:950px){
+    .desktop-nav{
+        display:none;
+    }
+
+    .desktop-nav.mobile-open{
+        display:flex;
+        position:absolute;
+        top:76px;
+        left:0;
+        right:0;
+        flex-direction:column;
+        gap:0;
+        padding:12px 6%;
+        background:var(--surface);
+        border-bottom:1px solid var(--border);
+        box-shadow:var(--shadow);
+    }
+
+    .desktop-nav.mobile-open a{
+        padding:13px 0;
+        width:100%;
+        border-bottom:1px solid var(--border);
+    }
+
+    .desktop-nav.mobile-open a:last-child{
+        border-bottom:none;
+    }
+
+    .mobile-menu-button{
+        display:grid;
+    }
+
+    .hero{grid-template-columns:1fr;min-height:auto;padding-top:90px}
+.hero-visual{max-width:650px;margin:0 auto;width:100%}.about-grid{grid-template-columns:1fr}.portrait-wrap{max-width:380px;margin:auto}.skills-layout,.roadmap{grid-template-columns:1fr}.featured-project{grid-template-columns:1fr}.project-image{min-height:350px}.contact-card{flex-direction:column;align-items:flex-start}.experience-grid{grid-template-columns:1fr}.projects-heading{display:block}}
 
 @media(max-width:650px){.site-header{padding:0 5%}.header-actions a:nth-child(-n+2){display:none}.section{padding:80px 6%}.hero{padding-top:65px}.hero-actions{flex-direction:column;align-items:stretch}.quick-stats{gap:20px}.floating-badge{display:none}.timeline:before{left:9px}.timeline-item{grid-template-columns:1fr;padding-left:35px;gap:0}.timeline-dot{left:4px}.timeline-year{text-align:left;padding:0 0 8px}.timeline-card{padding:22px}.project-info{padding:30px}.project-grid{grid-template-columns:1fr}.contact-card{padding:35px 25px}footer{flex-direction:column;gap:8px}}
