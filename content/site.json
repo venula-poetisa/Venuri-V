@@ -1,18 +1,16 @@
 {
   "general": {
-    "siteTitle": "Venuri V. | Portfolio",
+    "siteTitle": "Venuri V. | Portfolio test",
     "metaDescription": "Venuri V. - BIT & BSc undergraduate portfolio",
     "favicon": "/content/favicon.png"
   },
-
   "header": {
-    "brand": "Venuri V.",
+    "brand": "Venuri V. test",
     "email": "venurivethmini2005@gmail.com",
     "github": "https://github.com/venula-poetisa",
     "linkedin": "https://www.linkedin.com/in/venuri-vethmini-04157228a",
     "resume": "/content/cv.pdf"
   },
-
   "hero": {
     "eyebrow": "BIT & BSc undergraduate",
     "heading": "Hi, I'm",
@@ -61,7 +59,6 @@
       }
     ]
   },
-
   "about": {
     "eyebrow": "01 / About",
     "heading": "A little bit about me.",
@@ -81,14 +78,12 @@
     "photo": "/content/me.jpg",
     "photoCaption": "Currently learning & building"
   },
-
   "education": [
     {
       "year": "Current",
       "label": "Bachelor's Degree",
       "degree": "Bachelor of Information Technology",
       "institution": "University of Colombo School of Computing (UCSC)",
-      "description": "",
       "link": "https://bit.lk"
     },
     {
@@ -96,19 +91,15 @@
       "label": "Bachelor's Degree",
       "degree": "BSc. Physical Science - Information and Communication Technology",
       "institution": "University of Sri Jayewardenepura",
-      "description": "",
       "link": "https://science.sjp.ac.lk/information-and-communication-technology-ict/"
     },
     {
       "year": "A/L",
       "label": "G.C.E. Advanced Level",
       "degree": "ICT, Combined Mathematics & Physics",
-      "institution": "",
-      "description": "ICT (B), Combined Mathematics (C), Physics (C)",
-      "link": ""
+      "description": "ICT (B), Combined Mathematics (C), Physics (C)"
     }
   ],
-
   "experience": [
     {
       "date": "Feb 2026 · Remote",
@@ -135,7 +126,6 @@
       ]
     }
   ],
-
   "skills": {
     "eyebrow": "04 / Skills",
     "heading": "My current toolkit.",
@@ -178,13 +168,11 @@
       }
     ]
   },
-
   "projectsSection": {
     "eyebrow": "05 / Projects",
     "heading": "Things I've built.",
     "subtitle": "Selected academic and personal work, presented around what each project actually does."
   },
-
   "future": {
     "eyebrow": "06 / Future Projects",
     "heading": "What's next?",
@@ -210,7 +198,6 @@
       }
     ]
   },
-
   "contact": {
     "eyebrow": "07 / Contact",
     "heading": "Let's build something useful.",
@@ -219,7 +206,6 @@
     "githubLabel": "GitHub",
     "linkedinLabel": "LinkedIn"
   },
-
   "footer": {
     "text": "© 2026 Venuri V. Built with curiosity, caffeine, and a suspicious number of browser tabs.",
     "backToTop": "Back to top ↑"
