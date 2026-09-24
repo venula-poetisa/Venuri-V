@@ -89,6 +89,10 @@ content:
             label: Heading Emphasis
             type: string
 
+          - name: headingEnd
+            label: Heading Ending
+            type: string
+
           - name: description
             label: Description
             type: text

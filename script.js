@@ -162,7 +162,7 @@ async function loadSiteContent() {
                     heading.innerHTML = `
                         ${hero.heading || ""}
                         <em>${hero.headingEmphasis || ""}</em><br>
-                        I love creating.
+                        ${hero.headingEnd || ""}
                     `;
                 }
 
