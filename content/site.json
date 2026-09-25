@@ -179,18 +179,6 @@
     "subtitle": "A simple roadmap for projects I'm planning to turn into real builds.",
     "projects": [
       {
-        "status": "Exploring",
-        "icon": "fa-globe",
-        "title": "MERN Portfolio Platform",
-        "description": "A full-stack portfolio platform with a CMS-style admin panel, authentication and database-backed content."
-      },
-      {
-        "status": "Planned",
-        "icon": "fa-mobile-screen-button",
-        "title": "Practical Student App",
-        "description": "A small full-stack application designed around a real student workflow, from requirements to deployment."
-      },
-      {
         "status": "Learning",
         "icon": "fa-cloud",
         "title": "Cloud & Deployment",
