@@ -9,8 +9,14 @@
       "Express.js",
       "React.js",
       "Node.js",
-      "JavaScript",
-      "React 19"
+      "React 19",
+      "Vite",
+      "Tailwind CSS",
+      "Mongoose",
+      "Cloudinary",
+      "Lucide React",
+      "bcrypt",
+      "JWT"
     ]
   }
 ]
