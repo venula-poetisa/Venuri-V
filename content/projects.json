@@ -1,7 +1,7 @@
 [
   {
     "title": "GradBridge - Student Mentorship & Alumni Network",
-    "description": "GradBridge is a full-stack web platform connecting university students and alumni for mentorship, networking, and career opportunities. It provides role-based user experiences, authentication, profiles, mentorship features, and opportunity sharing through a React frontend and Node.js/Express backend with MongoDB.\nMy Contribution: Designed and developed the responsive authentication pages and landing page, implemented client-side form validation, and established the project's UI/UX styling patterns using Tailwind CSS.",
+    "description": "GradBridge is a full-stack web platform connecting university students and alumni for mentorship, networking, and career opportunities. It provides role-based user experiences, authentication, profiles, mentorship features, and opportunity sharing through a React frontend and Node.js/Express backend with MongoDB.\n/nMy Contribution: Designed and developed the responsive authentication pages and landing page, implemented client-side form validation, and established the project's UI/UX styling patterns using Tailwind CSS.",
     "image": "/images/GradBridge.png",
     "github": "https://github.com/MERN-Stack-Group/mern-stack-project",
     "tags": [
