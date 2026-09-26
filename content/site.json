@@ -16,13 +16,13 @@
     "heading": "Hi, I'm",
     "headingEmphasis": "Venuri.",
     "headingEnd": "I love creating.",
-    "description": "A BIT and BSc undergraduate passionate about technology, software development, and building practical digital solutions. Currently learning Java, JavaScript, MERN Stack, MySQL, and modern web technologies.",
+    "description": "A BIT and BSc undergraduate \nBITCH GTFO I'M STILL MAKING THIS SITE! IT'S UNDER CONSTRUCTION AND NEEDS UPDATES",
     "primaryButton": {
       "label": "View my work",
       "link": "#projects"
     },
     "secondaryButton": {
-      "label": "View Resume"
+      "label": "View Resume DON'T YOU DARE"
     },
     "stats": [
       {
@@ -73,7 +73,8 @@
       "JavaScript",
       "MERN",
       "HTML/CSS",
-      "MySQL"
+      "MySQL",
+      "Many more upcoming"
     ],
     "photo": "/content/me.jpg",
     "photoCaption": "Currently learning & building"
